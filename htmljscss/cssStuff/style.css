@@ -1,0 +1,222 @@
+/* h1{
+    color:green;
+}
+
+
+p{
+    color:green;
+} */
+
+/* instead: */
+
+/* h1,p{
+    color:green;
+} */
+
+
+body{
+    background-image: url("https://preview.redd.it/hey-desmond-bane-when-does-game-7-start-again-v0-1w6k9utpxswa1.jpg?auto=webp&s=b47e617678bcbdc224d52b03e6a11570efbf7369");
+    /* background-position:right top; */
+    background-position: 25% 75%;
+    /* background-position: right 35% bottom 45%; */
+    background-color:lightblue;
+    opacity:0.4
+}
+
+h1,p{
+    color:white;
+}
+
+/* b{
+    margin-top:60px
+} */
+
+h1{
+    /* margin-left: 20px
+    margin-left:50%;
+    margin-top: 50px;
+    /* doesnt move because nothing to the right of it. */
+    /* margin-right:50px;
+    margin-bottom:50px  */
+
+    /* top,right,bottom,left */
+    /* margin: 50px 50px 50px 50px; */
+
+    /* if only 3, will be top right bottom. */
+    /* if only 2, will be (top bottom) (right left) */
+    /* if only 1, will represent ALL. */
+    /* margin-top:inherit */
+    /* because p is INSIDE b, will take the properties of b. */
+
+    /* border-style:dotted */
+    /* border-style:solid */
+    /* border-style:groove */
+    /* border-style:dashed */
+    /* border-style:double */
+    /* border-style:ridge */
+    /* border-style:outset */
+    /* border-style:inset */
+    /* border-style:none */
+    /* top right bottom left */
+    /* border-style:dashed double dotted solid; */
+    /* border-width:6px */
+    /* border-width:medium */
+    /* border-width: 10px 5px 11px 22px;
+    border-color: lightblue blue green red; */
+
+    /* can split them */
+    /* border-top-style. */
+    /* put this if you only want one border: border-bottom: dashed */
+    /* to compress: border-left: 10px dashed purple; */
+
+    /* border: 3px solid purple;
+    border-radius:3px; */
+
+    /* padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 10px; */
+
+    /* padding: 40px 10px 20px 30px; */
+    /* height: 90px; */
+    /* width: 90px; */
+    /* width:50%; */
+    /* also max-width */
+
+    /* border: 2px dashed green;
+    outline-style: solid;
+    outline-offset: 10px; */
+    /* space between outline and border */
+
+
+    color:blue;
+    background-color:red;
+
+    /* align justify, right left center */
+    /* justify=textwrap? */
+    /* text-align: justify; */
+
+    /* aligns the last line of each large block to whatever. */
+    /* text-align-last: center; */
+
+    /* vertical-align: top; */
+
+
+    /* text-decoration-line: underline; */
+    /* text-decoration-line: line-through; */
+    /* text-decoration-line: overline underline;
+    text-decoration-color:green;
+
+    text-decoration-style: dashed;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10px; */
+    /* COMPRESSED */
+    text-decoration: overline purple solid 10px;
+
+    text-transform: uppercase;
+    /* capitalize for first char of each word. */
+
+    text-indent:30px;
+    letter-spacing: 30px;
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-style: italic;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 40px;
+    font-size: 3em;
+    /* 1em = 16px? */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+table,th,td{
+    visibility:hidden;
+    border:2px solid;
+    width:50%;
+    border-collapse: collapse;
+}
+
+
+th,td{
+   
+    text-align:center;
+    padding:10px
+}
+
+tr:hover{
+    background-color:blue;
+
+}
+
+
+/* descendent selector, b inside h1. */
+/* h1 b{
+    color:white;
+} */
+
+/* only direct descendants of h1? */
+h1 > b{
+    color:white;
+}
+
+/* 
+h1+b is adjacent. */
+
+.dropdownbutton{
+    background-color: blue;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border:none;
+    cursor:pointer;
+}
+
+.dropdown{
+    position:relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    background-color:lightblue;
+    min-width:150px;
+}
+
+.dropdown-menu a{
+    color:black;
+    padding:11px 15px;
+    text-decoration:none;
+    display: block
+}
+
+.dropdown-menu a:hover{
+    background-color:green;
+
+}
+
+/* needs to be dropdown and not dropdownbutton bc dropdownmenu is adjacent and not child of button. */
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+.dropdown:hover .dropdownbutton{
+    background-color: lightblue;
+}
+
+
+/* any div that has class as an attribute */
+/* div[class]{
+
+    color:red;
+} */
+/* could be already h1 set to white or whatever. */
+div[class="test"]{
+
+    color:red;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <!-- title must be under head, information about the page -->
+    <head> 
+        <title>My Page</title> 
+        <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/image-outline-filled.png">
+    </head>
+
+<body>
+    <!-- target creates new tab with that link -->
+    <a href="https://google.com" target="_blank"> Go to Google</a>
+    <br>
+    <a href="test4.html" target="_blank"> Go to test4</a>
+
+    <a href="mailto:sample@sample.com">Send me an email</a>
+
+    <table>
+        <!-- each tr is a table row -->
+        <tr>
+            <!-- table heading -->
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+
+        </tr>
+
+        <tr>
+            <!-- table data -->
+            <td>Tomi</td>
+            <td>19</td>
+            <td>Year 12</td>
+        </tr>
+
+        <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>Year 15</td>
+        </tr>
+
+        <tr>
+            <td>
+                <li>hello</li>
+                <li>hello1</li>
+            </td>
+        </tr>
+
+    </table>
+
+    <!-- lists, ul is list block but not needed. kinda like <p> -->
+        <!-- ul, unordered list, ol, ordered list -->
+        <!-- dl, description list -->
+    <ol>
+        <li>Name 1</li>
+        <li>Name 2</li>
+        <li>Name 3</li>
+        <li>Name 4</li>
+    </ol>
+
+    <dl>
+        <dt>Name 1</dt>
+
+        <dd>* This is the firs tname</dd>
+        <dt>Name 2</dt>
+        <dd>* This is the second description</dd>
+        
+    </dl>
+
+
+    <!-- Block and inline elements, spacing control -->
+    <!-- div wraps other elements inside. -->
+    <!-- div is a block, but <b> is inline. -->
+    <div style="color:green;background-color:blue">
+        <h1>First div</h1>
+        <p> This is a text <b>This is bold</b> </p>
+    </div>
+
+    <div style="color:red;background-color: purple;">
+        <h2>Another one</h2>
+        <b>hi</b>
+    </div>
+
+    <!-- src can be "https://google.com" -->
+    <iframe src="test4.html" height="100"></iframe>
+    <iframe src="https://google.com" height="100" style="border:none"></iframe>
+
+    <!-- "html symbols" -->
+    <p>This is euro sign &euro;</p>
+    <p>This is copyright sign &#169;</p>
+    <p>This is spade sign &#9824;</p>
+    <p>This is tm sign &#8482;</p>
+
+
+    <form>
+        <label for="username">Name</label> 
+        <br>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="school">School</label>
+        <br>
+        <input type="text" name="school" id=""school>
+    </form>
+
+
+
+    <form>
+        <!-- value is the value that is sent to the server. -->
+        <label for="username">tomi</label> 
+        <br>
+        <input type="checkbox" name="username" id="username" value="tomi">
+        <br>
+        <label for="username2">tim</label> 
+        <br>
+        <input type="checkbox" name="username" id="username2" value="tim">
+        <br>
+        
+    </form>
+
+    <!-- could send to something in a webapplication, such as /receive -->
+    <!-- data going through get/post -->
+    <!-- default is GET -->
+    <form action="form.html" method="POST">
+        <!-- value is the value that is sent to the server. -->
+        <label for="username">tomi</label> 
+       
+        <input type="radio" name="username" id="username" value="tomi">
+        <br>
+        <label for="username2">tim</label> 
+      
+        <input type="radio" name="username" id="username2" value="tim">
+        
+        <br>
+        <input type="submit" value="send">
+    </form>
+
+
+
+
+</body>
+</html>

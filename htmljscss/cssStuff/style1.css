@@ -1,0 +1,29 @@
+/* selector */
+/* body{ */
+    /* declaration */
+    /* height:100%;
+    width:100; */
+    /* background-color: green;
+    
+} */
+
+/* selecting by identifier needs # */
+#welcome{
+    background-color: green;
+}
+
+/* h1{
+    background-color: blue;
+} */
+
+/* selecting using a CLASS needs a dot. */
+h1.heading{
+    color:blue;
+}
+
+
+/* * AFFECTS EVERY ELEMENT (that isn't already styled) */
+* {
+    color: purple;
+}
+
